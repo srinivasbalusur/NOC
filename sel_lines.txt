@@ -1,0 +1,90 @@
+
+
+########## Routers Correct Select Lines ##################
+cb_in_router_0_sel : 000110
+cb_out_router_0_sel : 000010
+cb_in_router_1_sel : 000100
+cb_out_router_1_sel : 010000
+cb_in_router_2_sel : 001110
+cb_out_router_2_sel : 010011
+cb_in_router_3_sel : 010111
+cb_out_router_3_sel : 000001
+cb_in_router_4_sel : 010110
+cb_out_router_4_sel : 001110
+
+########## Merged Correct Select Lines ##################
+000110000010000100010000001110010011010111000001010110001110], ["intel_niosv_m_0_data_manager_agent_read_cp_valid", 0]]
+
+cb_in_router_0_sel : 000110
+
+########## cb_out_router_0 Before Shuffle ##########
+[["intel_niosv_m_0_data_manager_agent_read_cp_ready", 0], ["router_001_src_valid", 1], ["router_001_src_startofpacket", 2], ["router_001_src_endofpacket", 3]]
+
+########## cb_out_router_0 After Shuffle ##########
+[["router_001_src_startofpacket", 2], ["router_001_src_endofpacket", 3], ["router_001_src_valid", 1], ["intel_niosv_m_0_data_manager_agent_read_cp_ready", 0]]
+
+cb_out_router_0_sel : 000010
+
+########## cb_in_router_1 Before Shuffle ##########
+[["intel_niosv_m_0_instruction_manager_agent_write_cp_valid", 0], ["intel_niosv_m_0_instruction_manager_agent_write_cp_startofpacket", 1], ["intel_niosv_m_0_instruction_manager_agent_write_cp_endofpacket", 2], ["router_002_src_ready", 3]]
+
+########## cb_in_router_1 After Shuffle ##########
+[["intel_niosv_m_0_instruction_manager_agent_write_cp_startofpacket", 1], ["router_002_src_ready", 3], ["intel_niosv_m_0_instruction_manager_agent_write_cp_endofpacket", 2], ["intel_niosv_m_0_instruction_manager_agent_write_cp_valid", 0]]
+
+cb_in_router_1_sel : 000100
+
+########## cb_out_router_1 Before Shuffle ##########
+[["intel_niosv_m_0_instruction_manager_agent_write_cp_ready", 0], ["router_002_src_valid", 1], ["router_002_src_startofpacket", 2], ["router_002_src_endofpacket", 3]]
+
+########## cb_out_router_1 After Shuffle ##########
+[["intel_niosv_m_0_instruction_manager_agent_write_cp_ready", 0], ["router_002_src_endofpacket", 3], ["router_002_src_valid", 1], ["router_002_src_startofpacket", 2]]
+
+cb_out_router_1_sel : 010000
+
+########## cb_in_router_2 Before Shuffle ##########
+[["intel_niosv_m_0_instruction_manager_agent_read_cp_valid", 0], ["intel_niosv_m_0_instruction_manager_agent_read_cp_startofpacket", 1], ["intel_niosv_m_0_instruction_manager_agent_read_cp_endofpacket", 2], ["router_003_src_ready", 3]]
+
+########## cb_in_router_2 After Shuffle ##########
+[["intel_niosv_m_0_instruction_manager_agent_read_cp_startofpacket", 1], ["router_003_src_ready", 3], ["intel_niosv_m_0_instruction_manager_agent_read_cp_valid", 0], ["intel_niosv_m_0_instruction_manager_agent_read_cp_endofpacket", 2]]
+
+cb_in_router_2_sel : 001110
+
+########## cb_out_router_2 Before Shuffle ##########
+[["intel_niosv_m_0_instruction_manager_agent_read_cp_ready", 0], ["router_003_src_valid", 1], ["router_003_src_startofpacket", 2], ["router_003_src_endofpacket", 3]]
+
+########## cb_out_router_2 After Shuffle ##########
+[["router_003_src_startofpacket", 2], ["router_003_src_valid", 1], ["intel_niosv_m_0_instruction_manager_agent_read_cp_ready", 0], ["router_003_src_endofpacket", 3]]
+
+cb_out_router_2_sel : 010011
+
+########## cb_in_router_3 Before Shuffle ##########
+[["intel_niosv_m_0_timer_sw_agent_agent_rp_valid", 0], ["intel_niosv_m_0_timer_sw_agent_agent_rp_startofpacket", 1], ["intel_niosv_m_0_timer_sw_agent_agent_rp_endofpacket", 2], ["router_007_src_ready", 3]]
+
+########## cb_in_router_3 After Shuffle ##########
+[["intel_niosv_m_0_timer_sw_agent_agent_rp_startofpacket", 1], ["intel_niosv_m_0_timer_sw_agent_agent_rp_valid", 0], ["intel_niosv_m_0_timer_sw_agent_agent_rp_endofpacket", 2], ["router_007_src_ready", 3]]
+
+cb_in_router_3_sel : 010111
+
+########## cb_out_router_3 Before Shuffle ##########
+[["intel_niosv_m_0_timer_sw_agent_agent_rp_ready", 0], ["router_007_src_valid", 1], ["router_007_src_startofpacket", 2], ["router_007_src_endofpacket", 3]]
+
+########## cb_out_router_3 After Shuffle ##########
+[["router_007_src_endofpacket", 3], ["router_007_src_startofpacket", 2], ["router_007_src_valid", 1], ["intel_niosv_m_0_timer_sw_agent_agent_rp_ready", 0]]
+
+cb_out_router_3_sel : 000001
+
+########## cb_in_router_4 Before Shuffle ##########
+[["jtag_uart_0_avalon_jtag_slave_agent_rp_valid", 0], ["jtag_uart_0_avalon_jtag_slave_agent_rp_startofpacket", 1], ["jtag_uart_0_avalon_jtag_slave_agent_rp_endofpacket", 2], ["router_004_src_ready", 3]]
+
+########## cb_in_router_4 After Shuffle ##########
+[["jtag_uart_0_avalon_jtag_slave_agent_rp_valid", 0], ["jtag_uart_0_avalon_jtag_slave_agent_rp_endofpacket", 2], ["jtag_uart_0_avalon_jtag_slave_agent_rp_startofpacket", 1], ["router_004_src_ready", 3]]
+
+cb_in_router_4_sel : 010110
+
+########## cb_out_router_4 Before Shuffle ##########
+[["jtag_uart_0_avalon_jtag_slave_agent_rp_ready", 0], ["router_004_src_valid", 1], ["router_004_src_startofpacket", 2], ["router_004_src_endofpacket", 3]]
+
+########## cb_out_router_4 After Shuffle ##########
+[["router_004_src_valid", 1], ["router_004_src_endofpacket", 3], ["jtag_uart_0_avalon_jtag_slave_agent_rp_ready", 0], ["router_004_src_startofpacket", 2]]
+
+cb_out_router_4_sel : 001110

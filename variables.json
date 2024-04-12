@@ -1,0 +1,22 @@
+{
+    "path": "D:\\UFL\\NOC\\Final_NOC_Repo\\",
+    "crbar" : "crossbar4x4.sv",
+    "act_pkg_ldr" : "ap_loader.sv",
+    "module" : "module.v",
+    "interconnect_file" : "interconnect.sv",
+    "router_suffix": "Demo1_altera_merlin_router_1920_\\w+",
+    "random_routers_count": 5,
+    "output_router_file": "router.json",
+    "select_lines_file": "sel_lines.txt",
+    "activation_pkg_ldr": "act_pkg_loader.sv",
+    "output_cb_file": "output_cb.sv",
+    "new_interconnect_file": "interconnect_new.sv",
+    "generic_r_in" : ["sink_valid", "sink_startofpacket", "sink_endofpacket", "src_ready"],
+    "generic_r_out" : ["sink_ready", "src_valid", "src_startofpacket", "src_endofpacket"],
+    "cb_in_list" : ["in0", "in1", "in2", "in3"],
+    "cb_out_list" : ["out0", "out1", "out2", "out3"],
+    "cb_in_suffix" : "cb_in_router_",
+    "cb_out_suffix" : "cb_out_router_",
+    "in_suffix" : ["_in0", "_in1", "_in2", "_in3"],
+    "out_suffix" : ["_out0", "_out1", "_out2", "_out3"]
+}
